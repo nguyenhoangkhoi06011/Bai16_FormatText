@@ -38,7 +38,7 @@
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.lblinfor = new System.Windows.Forms.Label();
+            this.lblinfo = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,6 @@
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
-            this.hệThốngToolStripMenuItem.Click += new System.EventHandler(this.hệThốngToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
@@ -77,12 +76,11 @@
             this.tiệnÍchToolStripMenuItem.Name = "tiệnÍchToolStripMenuItem";
             this.tiệnÍchToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.tiệnÍchToolStripMenuItem.Text = "Tiện ích";
-            this.tiệnÍchToolStripMenuItem.Click += new System.EventHandler(this.tiệnÍchToolStripMenuItem_Click);
             // 
             // formatTextToolStripMenuItem
             // 
             this.formatTextToolStripMenuItem.Name = "formatTextToolStripMenuItem";
-            this.formatTextToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formatTextToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.formatTextToolStripMenuItem.Text = "FormatText";
             this.formatTextToolStripMenuItem.Click += new System.EventHandler(this.formatTextToolStripMenuItem_Click);
             // 
@@ -114,22 +112,21 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
             // 
-            // lblinfor
+            // lblinfo
             // 
-            this.lblinfor.AutoSize = true;
-            this.lblinfor.Location = new System.Drawing.Point(172, 134);
-            this.lblinfor.Name = "lblinfor";
-            this.lblinfor.Size = new System.Drawing.Size(35, 13);
-            this.lblinfor.TabIndex = 4;
-            this.lblinfor.Text = "label2";
-            this.lblinfor.Click += new System.EventHandler(this.label2_Click);
+            this.lblinfo.AutoSize = true;
+            this.lblinfo.Location = new System.Drawing.Point(127, 165);
+            this.lblinfo.Name = "lblinfo";
+            this.lblinfo.Size = new System.Drawing.Size(35, 13);
+            this.lblinfo.TabIndex = 6;
+            this.lblinfo.Text = "label2";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblinfor);
+            this.Controls.Add(this.lblinfo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -158,7 +155,7 @@
         private System.Windows.Forms.ToolStripMenuItem thôngTinToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblinfor;
+        private System.Windows.Forms.Label lblinfo;
     }
 }
 

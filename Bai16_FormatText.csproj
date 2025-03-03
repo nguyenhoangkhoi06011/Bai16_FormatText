@@ -46,28 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs">
+    <Compile Include="MainChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="MainChinh.Designer.cs">
+      <DependentUpon>MainChinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="formatText.cs">
+    <Compile Include="FormatText.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formatText.Designer.cs">
-      <DependentUpon>formatText.cs</DependentUpon>
+    <Compile Include="FormatText.Designer.cs">
+      <DependentUpon>FormatText.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+      <DependentUpon>MainChinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formatText.resx">
-      <DependentUpon>formatText.cs</DependentUpon>
+    <EmbeddedResource Include="FormatText.resx">
+      <DependentUpon>FormatText.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainChinh.resx">
+      <DependentUpon>MainChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

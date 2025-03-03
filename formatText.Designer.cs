@@ -1,6 +1,6 @@
 ﻿namespace Bai16_FormatText
 {
-    partial class formatText
+    partial class FormatText
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNhapTen = new System.Windows.Forms.TextBox();
+            this.txtNhapten = new System.Windows.Forms.TextBox();
             this.radRed = new System.Windows.Forms.RadioButton();
             this.radGreen = new System.Windows.Forms.RadioButton();
             this.radBlue = new System.Windows.Forms.RadioButton();
             this.radBlack = new System.Windows.Forms.RadioButton();
             this.chkBold = new System.Windows.Forms.CheckBox();
-            this.chkNghiengItalic = new System.Windows.Forms.CheckBox();
+            this.chkItalic = new System.Windows.Forms.CheckBox();
             this.chkGachChan = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblLapTrinh = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.color = new System.Windows.Forms.GroupBox();
+            
+            this.lblLaptrinh = new System.Windows.Forms.TextBox();
+            this.color.SuspendLayout();
+            
             this.SuspendLayout();
             // 
             // label1
@@ -55,13 +55,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhập Tên:";
             // 
-            // txtNhapTen
+            // txtNhapten
             // 
-            this.txtNhapTen.Location = new System.Drawing.Point(111, 17);
-            this.txtNhapTen.Name = "txtNhapTen";
-            this.txtNhapTen.Size = new System.Drawing.Size(128, 20);
-            this.txtNhapTen.TabIndex = 1;
-            this.txtNhapTen.TextChanged += new System.EventHandler(this.txtNhapTen_TextChanged);
+            this.txtNhapten.Location = new System.Drawing.Point(111, 17);
+            this.txtNhapten.Name = "txtNhapten";
+            this.txtNhapten.Size = new System.Drawing.Size(128, 20);
+            this.txtNhapten.TabIndex = 1;
+            
             // 
             // radRed
             // 
@@ -131,18 +131,18 @@
             this.chkBold.UseVisualStyleBackColor = true;
             this.chkBold.CheckedChanged += new System.EventHandler(this.chkBold_CheckedChanged);
             // 
-            // chkNghiengItalic
+            // chkItalic
             // 
-            this.chkNghiengItalic.AutoSize = true;
-            this.chkNghiengItalic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkNghiengItalic.ForeColor = System.Drawing.Color.Blue;
-            this.chkNghiengItalic.Location = new System.Drawing.Point(26, 68);
-            this.chkNghiengItalic.Name = "chkNghiengItalic";
-            this.chkNghiengItalic.Size = new System.Drawing.Size(105, 17);
-            this.chkNghiengItalic.TabIndex = 5;
-            this.chkNghiengItalic.Text = "Nghiêng Italic";
-            this.chkNghiengItalic.UseVisualStyleBackColor = true;
-            this.chkNghiengItalic.CheckedChanged += new System.EventHandler(this.chkNghiengItalic_CheckedChanged);
+            this.chkItalic.AutoSize = true;
+            this.chkItalic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkItalic.ForeColor = System.Drawing.Color.Blue;
+            this.chkItalic.Location = new System.Drawing.Point(26, 68);
+            this.chkItalic.Name = "chkItalic";
+            this.chkItalic.Size = new System.Drawing.Size(105, 17);
+            this.chkItalic.TabIndex = 5;
+            this.chkItalic.Text = "Nghiêng Italic";
+            this.chkItalic.UseVisualStyleBackColor = true;
+           
             // 
             // chkGachChan
             // 
@@ -155,7 +155,7 @@
             this.chkGachChan.TabIndex = 5;
             this.chkGachChan.Text = "Gạch Chân";
             this.chkGachChan.UseVisualStyleBackColor = true;
-            this.chkGachChan.CheckedChanged += new System.EventHandler(this.chkGachChan_CheckedChanged);
+            
             // 
             // label2
             // 
@@ -166,67 +166,58 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Lập Trình Bởi:";
             // 
-            // btnThoat
+            // button1
             // 
-            this.btnThoat.Location = new System.Drawing.Point(262, 282);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(89, 24);
-            this.btnThoat.TabIndex = 8;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            this.button1.Location = new System.Drawing.Point(262, 282);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 24);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = true;
+           
             // 
-            // groupBox1
+            // color
             // 
-            this.groupBox1.Controls.Add(this.radBlack);
-            this.groupBox1.Controls.Add(this.radBlue);
-            this.groupBox1.Controls.Add(this.radGreen);
-            this.groupBox1.Controls.Add(this.radRed);
-            this.groupBox1.Location = new System.Drawing.Point(1, 52);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(171, 185);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.color.Controls.Add(this.radBlack);
+            this.color.Controls.Add(this.radBlue);
+            this.color.Controls.Add(this.radGreen);
+            this.color.Controls.Add(this.radRed);
+            this.color.Location = new System.Drawing.Point(1, 52);
+            this.color.Name = "color";
+            this.color.Size = new System.Drawing.Size(171, 185);
+            this.color.TabIndex = 10;
+            this.color.TabStop = false;
+            this.color.Text = "groupBox1";
             // 
-            // groupBox2
+            // Font
             // 
-            this.groupBox2.Controls.Add(this.chkGachChan);
-            this.groupBox2.Controls.Add(this.chkNghiengItalic);
-            this.groupBox2.Controls.Add(this.chkBold);
-            this.groupBox2.Location = new System.Drawing.Point(204, 67);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(172, 170);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            
             // 
-            // lblLapTrinh
+            // lblLaptrinh
             // 
-            this.lblLapTrinh.Location = new System.Drawing.Point(105, 286);
-            this.lblLapTrinh.Name = "lblLapTrinh";
-            this.lblLapTrinh.Size = new System.Drawing.Size(125, 20);
-            this.lblLapTrinh.TabIndex = 12;
+            this.lblLaptrinh.Location = new System.Drawing.Point(105, 286);
+            this.lblLaptrinh.Name = "lblLaptrinh";
+            this.lblLaptrinh.Size = new System.Drawing.Size(125, 20);
+            this.lblLaptrinh.TabIndex = 12;
             // 
-            // formatText
+            // FormatText
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 361);
-            this.Controls.Add(this.lblLapTrinh);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.lblLaptrinh);
+            
+            this.Controls.Add(this.color);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNhapTen);
+            this.Controls.Add(this.txtNhapten);
             this.Controls.Add(this.label1);
-            this.Name = "formatText";
+            this.Name = "FormatText";
             this.Text = "FormatText";
             this.Load += new System.EventHandler(this.FormatText_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.color.ResumeLayout(false);
+            this.color.PerformLayout();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,18 +226,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNhapTen;
+        private System.Windows.Forms.TextBox txtNhapten;
         private System.Windows.Forms.RadioButton radRed;
         private System.Windows.Forms.RadioButton radGreen;
         private System.Windows.Forms.RadioButton radBlue;
         private System.Windows.Forms.RadioButton radBlack;
         private System.Windows.Forms.CheckBox chkBold;
-        private System.Windows.Forms.CheckBox chkNghiengItalic;
+        private System.Windows.Forms.CheckBox chkItalic;
         private System.Windows.Forms.CheckBox chkGachChan;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox lblLapTrinh;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox color;
+        private System.Windows.Forms.TextBox lblLaptrinh;
     }
 }
